@@ -22,10 +22,19 @@
           var yesButton = document.querySelector(
             'button[onclick*="thankyou.html"]'
           );
-          var currentFontSize = parseInt(
+          var noButton = document.getElementById("noButton");
+
+          // Increase font size of the Yes button
+          var currentYesFontSize = parseInt(
             window.getComputedStyle(yesButton).fontSize
           );
-          yesButton.style.fontSize = currentFontSize + 25 + "px"; // Increase font size by 5px
+          yesButton.style.fontSize = currentYesFontSize + 25 + "px"; // Increase font size by 25px
+
+          // Decrease font size of the No button
+          var currentNoFontSize = parseInt(
+            window.getComputedStyle(noButton).fontSize
+          );
+          noButton.style.fontSize = currentNoFontSize - 5 + "px"; // Decrease font size by 5px
         });
     </script>
   </body>
