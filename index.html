@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Be My Valentine</title>
     <link rel="stylesheet" href="css/valentine.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+
+      #valentineQuestion {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .answerButton {
+        padding: 15px 30px;
+        font-size: 18px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #ff6b6b; /* Red color for the buttons */
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .answerButton:hover {
+        background-color: #ff4d4d; /* Darker red on hover */
+        transform: translateY(-2px);
+      }
+
+      .answerButton:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      img.responsive {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <div id="valentineQuestion"><b>Would you be my valentine?</b></div>
